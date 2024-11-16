@@ -1,16 +1,9 @@
-# Welcome to My GitHub Pages Site!
 
-This is a simple website created using [GitHub Pages](https://pages.github.com/). Customize this page by editing the `index.md` file in your repository.
+## Surili Sheth
 
----
-
-## About Me
-Hi, I'm **Your Name**!  
-This is my portfolio website where I showcase my projects and hobbies.
-
-- 🔭 I’m currently working on: _Exciting Project_
-- 🌱 I’m learning: _New Skill_
-- 💬 Ask me about: _Your Expertise_
+PhD Candidate
+Political Science 
+UC Berkeley
 
 ---
 
