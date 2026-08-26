@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <title>Fieldwork | Surili Sheth</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/kube.css">
+
+    <script src="https://kit.fontawesome.com/9745af1226.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <style>
+
+      .profile-pic {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      .contact-block {
+        margin-top: 15px;
+      }
+
+      .contact-block p {
+        margin: 6px 0;
+        font-size: 15px;
+      }
+
+      .contact-block i {
+        margin-right: 8px;
+        color: #555;
+      }
+
+      .site-nav {
+        margin-top: 18px;
+      }
+
+      .site-nav a {
+        display: inline-block;
+        padding: 6px 10px;
+        margin: 3px 2px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+
+      .site-nav a:hover {
+        background: #f5f5f5;
+      }
+
+      /* FIELDWORK PHOTO GRID */
+
+      .fieldwork-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 18px;
+        margin-top: 25px;
+        margin-bottom: 35px;
+      }
+
+      .fieldwork-gallery figure {
+        margin: 0;
+      }
+
+      .fieldwork-gallery img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .fieldwork-gallery figcaption {
+        font-size: 12px;
+        line-height: 1.4;
+        color: #666;
+        margin-top: 7px;
+      }
+
+      /* PLACEHOLDER BOXES UNTIL PHOTOS ARE ADDED */
+
+      .photo-placeholder {
+        width: 100%;
+        height: 220px;
+        background: #f3f3f3;
+        border: 1px solid #d8d8d8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        color: #999;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      /* MOBILE */
+
+      @media screen and (max-width: 600px) {
+
+        .fieldwork-gallery {
+          grid-template-columns: 1fr;
+        }
+
+        .fieldwork-gallery img,
+        .photo-placeholder {
+          height: auto;
+          min-height: 220px;
+        }
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header>
+
+        <h1>Surili Sheth</h1>
+
+        <img src="img/sheth_website.jpg" class="profile-pic">
+
+        <div class="contact-block">
+
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            ETH Zurich
+          </p>
+
+          <p>
+            <i class="fas fa-university"></i>
+            IRDS, D-GESS
+          </p>
+
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:surili.sheth@gess.ethz.ch">Email</a>
+          </p>
+
+        </div>
+
+        <p>
+          <a href="cv/sheth_cv.pdf"><b>Curriculum Vitae</b></a>
+        </p>
+
+
+        <!-- NAVIGATION BUTTONS -->
+
+        <p class="site-nav">
+
+          <a href="index.html">
+            <b>Home</b>
+          </a>
+
+          <a href="book.html">
+            <b>Book Project</b>
+          </a>
+
+          <a href="fieldwork.html">
+            <b>Fieldwork</b>
+          </a>
+
+        </p>
+
+      </header>
+
+
+
+      <section class="about">
+
+        <h2>Fieldwork</h2>
+
+        <p>
+          My research draws extensively on fieldwork with state, community, and civil society institutions in India. Selected photographs from this work appear below.
+        </p>
+
+
+        <!-- GUJARAT SECTION -->
+
+        <h3>Gujarat</h3>
+
+        <div class="fieldwork-gallery">
+
+
+          <!-- PHOTO 1 -->
+
+          <figure>
+
+            <div class="surveys.jpg">
+              Photo 1
+            </div>
+
+            <figcaption>
+              Caption for photograph. Gujarat, India.
+            </figcaption>
+
+          </figure>
+
+
+          <!-- PHOTO 2 -->
+
+          <figure>
+
+            <div class="photo-placeholder">
+              Photo 2
+            </div>
+
+            <figcaption>
+              Caption for photograph. Gujarat, India.
+            </figcaption>
+
+          </figure>
+
+
+          <!-- PHOTO 3 -->
+
+          <figure>
+
+            <div class="photo-placeholder">
+              Photo 3
+            </div>
+
+            <figcaption>
+              Caption for photograph. Gujarat, India.
+            </figcaption>
+
+          </figure>
+
+
+          <!-- PHOTO 4 -->
+
+          <figure>
+
+            <div class="photo-placeholder">
+              Photo 4
+            </div>
+
+            <figcaption>
+              Caption for photograph. Gujarat, India.
+            </figcaption>
+
+          </figure>
+
+
+          <!-- PHOTO 5 -->
+
+          <figure>
+
+            <div class="photo-placeholder">
+              Photo 5
+            </div>
+
+            <figcaption>
+              Caption for photograph. Gujarat, India.
+            </figcaption>
+
+          </figure>
+
+
+          <!-- PHOTO 6 -->
+
+          <figure>
+
+            <div class="photo-placeholder">
+              Photo 6
+            </div>
+
+            <figcaption>
+              Caption for photograph. Gujarat, India.
+            </figcaption>
+
+          </figure>
+
+        </div>
+
+
+
+        <!-- BIHAR SECTION -->
+
+        <h3>Bihar</h3>
+
+        <div class="fieldwork-gallery">
+
+
+          <!-- PHOTO 7 -->
+
+          <figure>
+
+            <div class="photo-placeholder">
+              Photo 7
+            </div>
+
+            <figcaption>
+              Caption for photograph. Bihar, India.
+            </figcaption>
+
+          </figure>
+
+
+          <!-- PHOTO 8 -->
+
+          <figure>
+
+            <div class="photo-placeholder">
+              Photo 8
+            </div>
+
+            <figcaption>
+              Caption for photograph. Bihar, India.
+            </figcaption>
+
+          </figure>
+
+
+          <!-- PHOTO 9 -->
+
+          <figure>
+
+            <div class="photo-placeholder">
+              Photo 9
+            </div>
+
+            <figcaption>
+              Caption for photograph. Bihar, India.
+            </figcaption>
+
+          </figure>
+
+
+          <!-- PHOTO 10 -->
+
+          <figure>
+
+            <div class="photo-placeholder">
+              Photo 10
+            </div>
+
+            <figcaption>
+              Caption for photograph. Bihar, India.
+            </figcaption>
+
+          </figure>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </body>
+
+</html>
