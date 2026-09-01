@@ -1,363 +1,629 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <title>Fieldwork | Surili Sheth</title>
+  <title>Fieldwork | Surili Sheth</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/kube.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/kube.css">
+  <script src="https://kit.fontawesome.com/9745af1226.js"></script>
 
-    <script src="https://kit.fontawesome.com/9745af1226.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <style>
 
-    <style>
+    /* ======================================================
+       LEFT COLUMN
+    ====================================================== */
 
-      .profile-pic {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto;
+    .profile-pic {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .contact-block {
+      margin-top: 15px;
+    }
+
+    .contact-block p {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    .contact-block i {
+      margin-right: 8px;
+      color: #555;
+    }
+
+    .site-nav {
+      margin-top: 18px;
+    }
+
+    .site-nav a {
+      display: inline-block;
+      padding: 6px 10px;
+      margin: 3px 2px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .site-nav a:hover {
+      background: #f5f5f5;
+    }
+
+
+    /* ======================================================
+       FIELDWORK PAGE
+    ====================================================== */
+
+    .fieldwork-page h2 {
+      margin-bottom: 12px;
+    }
+
+    .fieldwork-intro {
+      margin-bottom: 28px;
+      max-width: 720px;
+    }
+
+    .fieldwork-intro p {
+      margin-top: 0;
+      line-height: 1.6;
+    }
+
+
+    /* ======================================================
+       HERO IMAGE
+    ====================================================== */
+
+    .hero-photo {
+      margin: 0 0 32px 0;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 3px;
+    }
+
+    .hero-photo figcaption {
+      margin-top: 7px;
+      font-size: 13px;
+      line-height: 1.4;
+      color: #666;
+    }
+
+
+    /* ======================================================
+       MASONRY PHOTO GALLERY
+    ====================================================== */
+
+    .photo-grid {
+      column-count: 2;
+      column-gap: 18px;
+    }
+
+    .photo-item {
+      display: inline-block;
+      width: 100%;
+      margin: 0 0 24px 0;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .photo-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 3px;
+    }
+
+    .photo-item figcaption {
+      margin-top: 6px;
+      font-size: 12.5px;
+      line-height: 1.4;
+      color: #666;
+    }
+
+
+    /* ======================================================
+       EARLIER FIELDWORK
+    ====================================================== */
+
+    .earlier-fieldwork {
+      margin-top: 38px;
+      padding-top: 12px;
+      border-top: 1px solid #ddd;
+    }
+
+    .earlier-fieldwork h3 {
+      margin-bottom: 8px;
+    }
+
+    .earlier-note {
+      margin-top: 0;
+      margin-bottom: 22px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+
+    /* ======================================================
+       MOBILE
+    ====================================================== */
+
+    @media screen and (max-width: 720px) {
+
+      .photo-grid {
+        column-count: 1;
       }
 
-      header {
-        text-align: center;
+      .hero-photo {
+        margin-bottom: 26px;
       }
 
-      .contact-block {
-        margin-top: 15px;
-      }
+    }
 
-      .contact-block p {
-        margin: 6px 0;
-        font-size: 15px;
-      }
+  </style>
 
-      .contact-block i {
-        margin-right: 8px;
-        color: #555;
-      }
+</head>
 
-      .site-nav {
-        margin-top: 18px;
-      }
 
-      .site-nav a {
-        display: inline-block;
-        padding: 6px 10px;
-        margin: 3px 2px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        text-decoration: none;
-      }
+<body>
 
-      .site-nav a:hover {
-        background: #f5f5f5;
-      }
+  <div class="wrapper">
 
-      /* FIELDWORK PHOTO GRID */
 
-      .fieldwork-gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px 18px;
-        margin-top: 25px;
-        margin-bottom: 35px;
-      }
+    <!-- ====================================================
+         LEFT-HAND COLUMN
+    ===================================================== -->
 
-      .fieldwork-gallery figure {
-        margin: 0;
-      }
+    <header>
 
-      .fieldwork-gallery img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        display: block;
-      }
+      <h1>Surili Sheth</h1>
 
-      .fieldwork-gallery figcaption {
-        font-size: 12px;
-        line-height: 1.4;
-        color: #666;
-        margin-top: 7px;
-      }
+      <img
+        src="img/sheth_website.jpg"
+        class="profile-pic"
+        alt="Surili Sheth"
+      >
 
-      /* PLACEHOLDER BOXES UNTIL PHOTOS ARE ADDED */
-
-      .photo-placeholder {
-        width: 100%;
-        height: 220px;
-        background: #f3f3f3;
-        border: 1px solid #d8d8d8;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-        color: #999;
-        font-size: 13px;
-        text-align: center;
-      }
-
-      /* MOBILE */
-
-      @media screen and (max-width: 600px) {
-
-        .fieldwork-gallery {
-          grid-template-columns: 1fr;
-        }
-
-        .fieldwork-gallery img,
-        .photo-placeholder {
-          height: auto;
-          min-height: 220px;
-        }
-
-      }
-
-    </style>
-
-  </head>
-
-  <body>
-
-    <div class="wrapper">
-
-      <header>
-
-        <h1>Surili Sheth</h1>
-
-        <img src="img/sheth_website.jpg" class="profile-pic">
-
-        <div class="contact-block">
-
-          <p>
-            <i class="fas fa-map-marker-alt"></i>
-            ETH Zurich
-          </p>
-
-          <p>
-            <i class="fas fa-university"></i>
-            IRDS, D-GESS
-          </p>
-
-          <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:surili.sheth@gess.ethz.ch">Email</a>
-          </p>
-
-        </div>
+      <div class="contact-block">
 
         <p>
-          <a href="cv/sheth_cv.pdf"><b>Curriculum Vitae</b></a>
+          <i class="fas fa-map-marker-alt"></i>
+          ETH Zurich
         </p>
-
-
-        <!-- NAVIGATION BUTTONS -->
-
-        <p class="site-nav">
-
-          <a href="index.html">
-            <b>Home</b>
-          </a>
-
-          <a href="book.html">
-            <b>Book Project</b>
-          </a>
-
-          <a href="fieldwork.html">
-            <b>Fieldwork</b>
-          </a>
-
-        </p>
-
-      </header>
-
-
-
-      <section class="about">
-
-        <h2>Fieldwork</h2>
 
         <p>
-          My research draws extensively on fieldwork with state, community, and civil society institutions in India. Selected photographs from this work appear below.
+          <i class="fas fa-university"></i>
+          IRDS, D-GESS
+        </p>
+
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:surili.sheth@gess.ethz.ch">Email</a>
+        </p>
+
+      </div>
+
+
+      <p>
+        <a href="cv/sheth_cv.pdf">
+          <b>Curriculum Vitae</b>
+        </a>
+      </p>
+
+
+      <p class="site-nav">
+
+        <a href="index.html">
+          <b>Home</b>
+        </a>
+
+        <a href="book.html">
+          <b>Book Project</b>
+        </a>
+
+        <a href="fieldwork.html">
+          <b>Fieldwork</b>
+        </a>
+
+      </p>
+
+    </header>
+
+
+
+    <!-- ====================================================
+         RIGHT-HAND COLUMN
+    ===================================================== -->
+
+    <section class="about fieldwork-page">
+
+      <h2>Fieldwork</h2>
+
+      <div class="fieldwork-intro">
+
+        <p>
+          My research is grounded in long-term fieldwork and collaboration
+          with communities, researchers, and institutions in India. These
+          photographs document some of the places, people, and research
+          processes that shape my work.
+        </p>
+
+      </div>
+
+
+
+      <!-- ==================================================
+           HERO IMAGE
+      =================================================== -->
+
+      <figure class="hero-photo">
+
+        <img
+          src="img/gujarat%202024.jpeg"
+          alt="Fieldwork in Gujarat"
+        >
+
+        <figcaption>
+          Fieldwork in Gujarat, 2024.
+        </figcaption>
+
+      </figure>
+
+
+
+      <!-- ==================================================
+           MAIN FIELDWORK GALLERY
+      =================================================== -->
+
+      <div class="photo-grid">
+
+
+        <!-- Household survey -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/surveying.jpg"
+            alt="Household survey during fieldwork in India"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Conducting a household survey in India.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Field team -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_3122.jpeg"
+            alt="Field research team in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Field research team in Gujarat.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Walking through village -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_3289.jpeg"
+            alt="Walking through a village in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Moving through a field site in rural Gujarat.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Participatory exercise -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_4076.jpeg"
+            alt="Participatory research exercise in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Participatory research during fieldwork in Gujarat.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Participatory exercise detail -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_4125.jpeg"
+            alt="Participatory research exercise"
+            loading="lazy"
+          >
+
+          <figcaption>
+            A participatory research exercise.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Government office conversation -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_4751.jpeg"
+            alt="Field conversations outside a local government office"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Field conversations outside a local government office in Gujarat.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Retrieving records -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_4785.jpeg"
+            alt="Locating administrative records during fieldwork"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Locating administrative records during fieldwork.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Archive -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_4741.jpeg"
+            alt="Administrative records in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Local administrative records in Gujarat.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Interview -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_8270.jpeg"
+            alt="Field interview in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Field interview in Gujarat.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Walking / village -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_5543.jpeg"
+            alt="Walking through a field site in rural Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Moving between research sites in rural Gujarat.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Monsoon -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_3349.jpeg"
+            alt="Motorbike traveling through rural Gujarat during monsoon"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Monsoon fieldwork in rural Gujarat.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Loaded motorbike -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_5768.jpg"
+            alt="Motorbike carrying goods during fieldwork"
+            loading="lazy"
+          >
+
+          <figcaption>
+            On the road during fieldwork.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Window and bridge -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_2912.JPG"
+            alt="View through a window during fieldwork"
+            loading="lazy"
+          >
+
+          <figcaption>
+            A view from the field.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- Lunch -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_4791.jpeg"
+            alt="Lunch during a day of fieldwork in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Lunch during a day of fieldwork in Gujarat.
+          </figcaption>
+
+        </figure>
+
+
+      </div>
+
+
+
+      <!-- ==================================================
+           EARLIER FIELDWORK
+      =================================================== -->
+
+      <div class="earlier-fieldwork">
+
+        <h3>Earlier Fieldwork</h3>
+
+        <p class="earlier-note">
+          Earlier research and development work has also taken me to other
+          parts of South Asia and sub-Saharan Africa.
         </p>
 
 
-        <!-- AP SECTION -->
-
-        <h3>Andhra Pradesh (Erstwhile)</h3>
-
-        <div class="fieldwork-gallery">
+        <div class="photo-grid">
 
 
-         <!-- PHOTO 1 -->
+          <!-- Nepal -->
 
-<figure>
+          <figure class="photo-item">
 
-  <img src="img/surveys.jpg" alt="RCT surveys ready for distribution in Andhra Pradesh">
-
-  <figcaption>
-    RCT surveys ready to be distributed across eight district teams, Andhra Pradesh, India (2012).
-  </figcaption>
-
-</figure>
-
-
-          <!-- PHOTO 2 -->
-
-          <figure>
-
-            <div class="photo-placeholder">
-              Photo 2
-            </div>
+            <img
+              src="img/nepal%202015.JPG"
+              alt="Fieldwork in Nepal"
+              loading="lazy"
+            >
 
             <figcaption>
-              Caption for photograph. Gujarat, India.
+              Nepal, 2015.
             </figcaption>
 
           </figure>
 
 
-          <!-- PHOTO 3 -->
 
-          <figure>
+          <!-- Nigeria -->
 
-            <div class="photo-placeholder">
-              Photo 3
-            </div>
+          <figure class="photo-item">
+
+            <img
+              src="img/nigeria%202022.jpeg"
+              alt="Fieldwork in Nigeria"
+              loading="lazy"
+            >
 
             <figcaption>
-              Caption for photograph. Gujarat, India.
+              Nigeria, 2022.
             </figcaption>
 
           </figure>
 
 
-          <!-- PHOTO 4 -->
 
-          <figure>
+          <!-- Earlier fieldwork -->
 
-            <div class="photo-placeholder">
-              Photo 4
-            </div>
+          <figure class="photo-item">
 
-            <figcaption>
-              Caption for photograph. Gujarat, India.
-            </figcaption>
-
-          </figure>
-
-
-          <!-- PHOTO 5 -->
-
-          <figure>
-
-            <div class="photo-placeholder">
-              Photo 5
-            </div>
-
-            <figcaption>
-              Caption for photograph. Gujarat, India.
-            </figcaption>
+            <img
+              src="img/IMG_6117.jpg"
+              alt="Earlier fieldwork"
+              loading="lazy"
+            >
 
           </figure>
 
-
-          <!-- PHOTO 6 -->
-
-          <figure>
-
-            <div class="photo-placeholder">
-              Photo 6
-            </div>
-
-            <figcaption>
-              Caption for photograph. Gujarat, India.
-            </figcaption>
-
-          </figure>
 
         </div>
 
+      </div>
 
 
-        <!-- BIHAR SECTION -->
+    </section>
 
-        <h3>Bihar</h3>
+  </div>
 
-        <div class="fieldwork-gallery">
-
-
-          <!-- PHOTO 7 -->
-
-          <figure>
-
-            <div class="photo-placeholder">
-              Photo 7
-            </div>
-
-            <figcaption>
-              Caption for photograph. Bihar, India.
-            </figcaption>
-
-          </figure>
-
-
-          <!-- PHOTO 8 -->
-
-          <figure>
-
-            <div class="photo-placeholder">
-              Photo 8
-            </div>
-
-            <figcaption>
-              Caption for photograph. Bihar, India.
-            </figcaption>
-
-          </figure>
-
-
-          <!-- PHOTO 9 -->
-
-          <figure>
-
-            <div class="photo-placeholder">
-              Photo 9
-            </div>
-
-            <figcaption>
-              Caption for photograph. Bihar, India.
-            </figcaption>
-
-          </figure>
-
-
-          <!-- PHOTO 10 -->
-
-          <figure>
-
-            <div class="photo-placeholder">
-              Photo 10
-            </div>
-
-            <figcaption>
-              Caption for photograph. Bihar, India.
-            </figcaption>
-
-          </figure>
-
-        </div>
-
-      </section>
-
-    </div>
-
-  </body>
-
+</body>
 </html>
