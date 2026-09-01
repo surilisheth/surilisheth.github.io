@@ -82,28 +82,24 @@
       line-height: 1.6;
     }
 
-    .fieldwork-page h3 {
-      margin-top: 5px;
-      margin-bottom: 20px;
-    }
-
 
     /* ======================================================
        PHOTO GALLERY
+
+       Grid rather than CSS columns so that the photographs
+       appear in true reverse chronological reading order:
+       left to right, then down the page.
     ====================================================== */
 
     .photo-grid {
-      column-count: 2;
-      column-gap: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px 18px;
+      align-items: start;
     }
 
     .photo-item {
-      display: inline-block;
-      width: 100%;
-      margin: 0 0 25px 0;
-      break-inside: avoid;
-      -webkit-column-break-inside: avoid;
-      page-break-inside: avoid;
+      margin: 0;
     }
 
     .photo-item img {
@@ -122,35 +118,13 @@
 
 
     /* ======================================================
-       EARLIER FIELDWORK
-    ====================================================== */
-
-    .earlier-fieldwork {
-      margin-top: 42px;
-      padding-top: 22px;
-      border-top: 1px solid #ddd;
-    }
-
-    .earlier-fieldwork h3 {
-      margin-bottom: 8px;
-    }
-
-    .earlier-note {
-      margin-top: 0;
-      margin-bottom: 22px;
-      line-height: 1.6;
-      color: #555;
-    }
-
-
-    /* ======================================================
        MOBILE
     ====================================================== */
 
     @media screen and (max-width: 720px) {
 
       .photo-grid {
-        column-count: 1;
+        grid-template-columns: 1fr;
       }
 
     }
@@ -198,13 +172,11 @@
 
       </div>
 
-
       <p>
         <a href="cv/sheth_cv.pdf">
           <b>Curriculum Vitae</b>
         </a>
       </p>
-
 
       <p class="site-nav">
 
@@ -246,19 +218,18 @@
       </div>
 
 
-      <h3>Selected Fieldwork</h3>
-
-
       <div class="photo-grid">
 
 
-        <!-- FIELD TEAM -->
+        <!-- ==================================================
+             2024 — GUJARAT
+        =================================================== -->
 
         <figure class="photo-item">
 
           <img
             src="img/IMG_3122.jpeg"
-            alt="Field research team in Gujarat"
+            alt="Enumerator team training in Gujarat"
             loading="lazy"
           >
 
@@ -269,32 +240,11 @@
         </figure>
 
 
-
-        <!-- NIGERIA -->
-
-        <figure class="photo-item">
-
-          <img
-            src="img/nigeria%202022.jpeg"
-            alt="Fieldwork in Nigeria"
-            loading="lazy"
-          >
-
-          <figcaption>
-            Nigeria, 2022. Women's group meeting.
-          </figcaption>
-
-        </figure>
-
-
-
-        <!-- MOVING THROUGH VILLAGE -->
-
         <figure class="photo-item">
 
           <img
             src="img/IMG_3289.jpeg"
-            alt="Walking through a village in Gujarat"
+            alt="Enumerator team piloting in Gujarat"
             loading="lazy"
           >
 
@@ -305,104 +255,26 @@
         </figure>
 
 
-
-        <!-- PARTICIPATORY RESEARCH -->
-
         <figure class="photo-item">
 
           <img
-            src="img/IMG_4076.jpeg"
-            alt="Participatory research in Gujarat"
+            src="img/surveyor%20practice%20gujarat%202024.jpeg"
+            alt="Surveyor practice in Gujarat"
             loading="lazy"
           >
 
           <figcaption>
-            Gujarat, 2022. Village mapping.
+            Gujarat, 2024. Surveyor practice during enumerator training.
           </figcaption>
 
         </figure>
 
-
-
-        <!-- PARTICIPATORY RESEARCH DETAIL -->
-
-        <figure class="photo-item">
-
-          <img
-            src="img/IMG_4125.jpeg"
-            alt="Participatory research exercise in Gujarat"
-            loading="lazy"
-          >
-
-          <figcaption>
-            Gujarat, 2022. Focus group discussion community map exercise.
-          </figcaption>
-
-        </figure>
-
-
-
-        <!-- COUNSELORS AND LAWYERS -->
-
-        <figure class="photo-item">
-
-          <img
-            src="img/IMG_4751.jpeg"
-            alt="Discussions between counselors and lawyers in Gujarat"
-            loading="lazy"
-          >
-
-          <figcaption>
-            Gujarat, 2024. Discussions between counselors and lawyers outside of local courthouse.
-          </figcaption>
-
-        </figure>
-
-
-
-        <!-- LOCATING COURTHOUSE RECORDS -->
-
-        <figure class="photo-item">
-
-          <img
-            src="img/IMG_4785.jpeg"
-            alt="Locating local courthouse records in Gujarat"
-            loading="lazy"
-          >
-
-          <figcaption>
-            Gujarat, 2023. Locating archival records.
-          </figcaption>
-
-        </figure>
-
-
-
-        <!-- COURTHOUSE RECORDS -->
-
-        <figure class="photo-item">
-
-          <img
-            src="img/IMG_4741.jpeg"
-            alt="Local courthouse records in Gujarat"
-            loading="lazy"
-          >
-
-          <figcaption>
-            Gujarat, 2024. Local courthouse record room.
-          </figcaption>
-
-        </figure>
-
-
-
-        <!-- FIELD INTERVIEW -->
 
         <figure class="photo-item">
 
           <img
             src="img/IMG_8270.jpeg"
-            alt="Field interview in Gujarat"
+            alt="Enumerator training in Gujarat"
             loading="lazy"
           >
 
@@ -413,14 +285,151 @@
         </figure>
 
 
+        <figure class="photo-item">
 
-        <!-- MOVING BETWEEN RESEARCH SITES -->
+          <img
+            src="img/survey%20team%20debrief%20gjarat%202024.jpeg"
+            alt="Survey team debrief in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2024. Survey team debrief.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/end%20of%20day%20debrief%20gujarat%202024.jpeg"
+            alt="End-of-day research team debrief in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2024. End-of-day debrief.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/Field%20manager%20trying%20to%20find%20connectivity%20gujarat%202024.jpeg"
+            alt="Field manager trying to find connectivity in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2024. Field manager trying to find connectivity.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_3349.jpeg"
+            alt="Survey site in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2024. Survey site.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_4751.jpeg"
+            alt="Discussions between counselors and lawyers outside a local courthouse in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2024. Discussions between counselors and lawyers outside of local courthouse.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_4741.jpeg"
+            alt="Local courthouse record room in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2024. Local courthouse record room.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/cha%20break.jpeg"
+            alt="Chai break during fieldwork in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2024. Chai break during fieldwork.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- ==================================================
+             2023 — GUJARAT
+        =================================================== -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/courtroom%20claim-making%20gujarat%202023.jpeg"
+            alt="Claim-making at a local courthouse in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2023. Claim-making at a local courthouse.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/IMG_4785.jpeg"
+            alt="Locating archival records in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2023. Locating archival records.
+          </figcaption>
+
+        </figure>
+
 
         <figure class="photo-item">
 
           <img
             src="img/IMG_5543.jpeg"
-            alt="Moving between research sites in rural Gujarat"
+            alt="Counselors in a village in Gujarat"
             loading="lazy"
           >
 
@@ -432,170 +441,376 @@
 
 
 
-        <!-- MONSOON -->
+        <!-- ==================================================
+             2022 — GUJARAT / DELHI / NIGERIA
+        =================================================== -->
 
         <figure class="photo-item">
 
           <img
-            src="img/IMG_3349.jpeg"
-            alt="Monsoon fieldwork in rural Gujarat"
+            src="img/IMG_4076.jpeg"
+            alt="Village mapping in Gujarat"
             loading="lazy"
           >
 
           <figcaption>
-            Gujarat, 2024. Survey site.
+            Gujarat, 2022. Village mapping.
           </figcaption>
 
         </figure>
 
 
-        <!-- ==================================================
-             JHARKHAND
-             Add once filename/year are identified.
-        =================================================== -->
-
-        <!--
-
         <figure class="photo-item">
 
           <img
-            src="img/JHARKHAND_FILENAME.jpg"
-            alt="Fieldwork in Jharkhand"
+            src="img/IMG_4125.jpeg"
+            alt="Focus group discussion community map exercise in Gujarat"
             loading="lazy"
           >
 
           <figcaption>
-            Jharkhand, YEAR. DESCRIPTION.
+            Gujarat, 2022. Focus group discussion community map exercise.
           </figcaption>
 
         </figure>
 
-        -->
-
-
-
-        <!-- ==================================================
-             KERALA
-             Add once filename/year are identified.
-        =================================================== -->
-
-        <!--
 
         <figure class="photo-item">
 
           <img
-            src="img/KERALA_FILENAME.jpg"
+            src="img/participatory%20mapping%20walk%202022.jpg"
+            alt="Participatory mapping walk in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2022. Participatory mapping walk.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/delhi%202022%20-%20qualitative%20team%20concept%20mapping.JPG"
+            alt="Qualitative research team concept mapping in Delhi"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Delhi, 2022. Qualitative research team concept mapping.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/nigeria%202022.jpeg"
+            alt="Women's group meeting in Nigeria"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Nigeria, 2022. Women's group meeting.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- ==================================================
+             2019 — GUJARAT
+        =================================================== -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/gujarat%20land%20ownership%20discussions%202019.JPEG"
+            alt="Land ownership discussions in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2019. Land ownership discussions.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/women%27s%20group%20discussion%20on%20land%20rights%202019.JPEG"
+            alt="Women's group discussion on land rights in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2019. Women's group discussion on land rights.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/SEWA%20group%20training%20on%20processing.jpeg"
+            alt="SEWA group training on processing in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2019. SEWA group training on processing.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- ==================================================
+             2019 — JHARKHAND
+        =================================================== -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/womens%20self-help%20group%20training%20jharkhand.JPG"
+            alt="Women's self-help group training in Jharkhand"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Jharkhand, 2019. Women's self-help group training.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/Self-Help%20Group%20Woman%20Entrepeneur%20Jharkhand.JPG"
+            alt="Self-help group woman entrepreneur in Jharkhand"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Jharkhand, 2019. Self-help group woman entrepreneur.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/Jharkhand%20self-help%20group%20cluster-level%20federation%20meeting%202019%20.JPG"
+            alt="Self-help group cluster-level federation meeting in Jharkhand"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Jharkhand, 2019. Self-help group cluster-level federation meeting.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/jharkhand%20self%20help%20group%20financial%20records%20meeting%202019.JPG"
+            alt="Self-help group financial records meeting in Jharkhand"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Jharkhand, 2019. Self-help group financial records meeting.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- ==================================================
+             2019 — KERALA
+        =================================================== -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/kerala%20fieldwork%202019.jpg"
             alt="Fieldwork in Kerala"
             loading="lazy"
           >
 
           <figcaption>
-            Kerala, YEAR. DESCRIPTION.
+            Kerala, 2019. Fieldwork.
           </figcaption>
 
         </figure>
 
-        -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/kerala%202019%203.jpg"
+            alt="Fieldwork site in Kerala"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Kerala, 2019. Fieldwork site.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/Kudumbashree%20women%27s%20show%20-%20woman%20dressed%20up%20as%20a%20drunkard%20husband%20to%20act%20out%20a%20skit%20kerala%202019.JPG"
+            alt="Kudumbashree women's performance in Kerala"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Kerala, 2019. Kudumbashree women's performance: a woman plays a drunk husband in a skit.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/kerala%20NREGA%20worksite%202019.jpg"
+            alt="NREGA worksite in Kerala"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Kerala, 2019. NREGA worksite.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- ==================================================
+             2018 — KERALA
+        =================================================== -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/kerala%20Women%27s%20union%20of%20tea%20plantation%20workers%20housing%202018.jpg"
+            alt="Housing of women's union tea plantation workers in Kerala"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Kerala, 2018. Housing of women's union of tea plantation workers.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- ==================================================
+             2015 — NEPAL
+        =================================================== -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/nepal%202015.JPG"
+            alt="Post-earthquake temporary settlement in Nepal"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Nepal, 2015. Post-earthquake temporary settlement.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/nepal%202015%20okhaldunga.jpg"
+            alt="Fieldwork in Okhaldhunga, Nepal"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Nepal, 2015. Fieldwork in Okhaldhunga.
+          </figcaption>
+
+        </figure>
+
+
+        <figure class="photo-item">
+
+          <img
+            src="img/nepal%20earthquake%20rebuilding%20materials%202015.JPG"
+            alt="Post-earthquake rebuilding materials in Nepal"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Nepal, 2015. Post-earthquake rebuilding materials.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- ==================================================
+             2014 — KENYA
+        =================================================== -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/kenya%202014%20facilitators%20setting%20up%20for%20focus%20group%20discussion.jpg"
+            alt="Facilitators setting up for a focus group discussion in Kenya"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Kenya, 2014. Facilitators setting up for a focus group discussion.
+          </figcaption>
+
+        </figure>
+
+
+
+        <!-- ==================================================
+             2010 — GUJARAT
+        =================================================== -->
+
+        <figure class="photo-item">
+
+          <img
+            src="img/surveying.jpg"
+            alt="Piloting household surveys in Gujarat"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Gujarat, 2010. Piloting household surveys.
+          </figcaption>
+
+        </figure>
 
 
       </div>
-
-
-
-      <!-- ==================================================
-           EARLIER FIELDWORK
-      =================================================== -->
-
-      <div class="earlier-fieldwork">
-
-        <h3>Earlier Fieldwork</h3>
-
-        <p class="earlier-note">
-          Earlier research and development work in India and South Asia.
-        </p>
-
-
-        <div class="photo-grid">
-
-
-          <!-- SURVEY PILOTING -->
-
-          <figure class="photo-item">
-
-            <img
-              src="img/surveying.jpg"
-              alt="Piloting household surveys in Gujarat"
-              loading="lazy"
-            >
-
-            <figcaption>
-              Gujarat, 2010. Piloting household surveys.
-            </figcaption>
-
-          </figure>
-
-
-
-          <!-- NEPAL -->
-
-          <figure class="photo-item">
-
-            <img
-              src="img/nepal%202015.JPG"
-              alt="Fieldwork in Nepal"
-              loading="lazy"
-            >
-
-            <figcaption>
-              Nepal, 2015. Post-earthquake temporary settlement.
-            </figcaption>
-
-          </figure>
-
-
-
-          <!-- ==================================================
-               J-PAL PAPER SURVEYS
-               Add once filename/place/year are identified.
-          =================================================== -->
-
-          <!--
-
-          <figure class="photo-item">
-
-            <img
-              src="img/JPAL_SURVEY_FILENAME.jpg"
-              alt="Paper surveys from J-PAL fieldwork"
-              loading="lazy"
-            >
-
-            <figcaption>
-              PLACE, YEAR. Paper surveys during J-PAL fieldwork.
-            </figcaption>
-
-          </figure>
-
-          -->
-
-
-
-          <!-- OTHER EARLIER FIELDWORK -->
-
-          <figure class="photo-item">
-
-            <img
-              src="img/IMG_6117.jpg"
-              alt="Earlier fieldwork"
-              loading="lazy"
-            >
-
-          </figure>
-
-
-        </div>
-
-      </div>
-
 
     </section>
 
