@@ -1,8 +1,6 @@
 <!doctype html>
 <html>
-
   <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
@@ -11,12 +9,16 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/kube.css">
 
-    <script src="https://kit.fontawesome.com/9745af1226.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9745af1226.js"
+      crossorigin="anonymous">
+    </script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no">
 
     <style>
-
       .profile-pic {
         width: 300px;
         height: 300px;
@@ -44,6 +46,30 @@
         color: #555;
       }
 
+      .cv-button {
+        margin: 18px 0 8px;
+      }
+
+      .cv-button a {
+        display: inline-block;
+        padding: 7px 13px;
+        border: 1px solid #777;
+        border-radius: 4px;
+        background: #555;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .cv-button a:hover {
+        background: #333;
+        color: #fff;
+      }
+
+      .cv-button i {
+        margin-right: 6px;
+      }
+
       .site-nav {
         margin-top: 18px;
       }
@@ -54,6 +80,8 @@
         margin: 3px 2px;
         border: 1px solid #ccc;
         border-radius: 4px;
+        background: transparent;
+        color: inherit;
         text-decoration: none;
       }
 
@@ -73,29 +101,26 @@
       }
 
       .book-photo-caption {
+        margin-top: 6px;
+        color: #666;
         font-size: 12px;
         line-height: 1.4;
-        color: #666;
-        margin-top: 6px;
       }
-
     </style>
-
   </head>
 
-
   <body>
-
     <div class="wrapper">
 
       <header>
-
         <h1>Surili Sheth</h1>
 
-        <img src="img/sheth_website.jpg" class="profile-pic">
+        <img
+          src="img/sheth_website.jpg"
+          class="profile-pic"
+          alt="Surili Sheth">
 
         <div class="contact-block">
-
           <p>
             <i class="fas fa-map-marker-alt"></i>
             ETH Zurich
@@ -111,76 +136,104 @@
             <a href="mailto:surili.sheth@gess.ethz.ch">Email</a>
           </p>
 
+          <p>
+            <i class="fab fa-orcid"></i>
+            <a
+              href="https://orcid.org/0009-0004-4721-6607"
+              target="_blank"
+              rel="noopener">
+              ORCID
+            </a>
+          </p>
         </div>
 
-        <p>
-          <a href="cv/sheth_cv.pdf"><b>Curriculum Vitae</b></a>
+        <p class="cv-button">
+          <a
+            href="cv/sheth_cv.pdf"
+            target="_blank"
+            rel="noopener">
+            <i class="fas fa-file-alt"></i>
+            Curriculum Vitae
+          </a>
         </p>
 
-
-        <!-- NAVIGATION -->
-
-        <p class="site-nav">
-
-          <a href="index.html">
-            <b>Home</b>
-          </a>
-
-          <a href="book.html">
-            <b>Book Project</b>
-          </a>
-
-          <a href="fieldwork.html">
-            <b>Fieldwork</b>
-          </a>
-
-        </p>
-
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html"><b>Home</b></a>
+          <a href="research.html"><b>Research</b></a>
+          <a href="book.html"><b>Book Project</b></a>
+          <a href="fieldwork.html"><b>Fieldwork</b></a>
+          <a href="teaching.html"><b>Teaching</b></a>
+          <a href="other-writing.html"><b>Other Writing</b></a>
+        </nav>
       </header>
 
-
       <section class="about">
-
         <h2>Book Project</h2>
 
         <h3>
-          <i>Making Violence Legible: Dependency, Disclosure, and Institutional Response</i>
+          <i>
+            Making Violence Legible: Dependency, Disclosure, and
+            Institutional Response
+          </i>
         </h3>
 
-
-        <!-- BOOK / FIELDWORK PHOTO -->
-
         <div class="book-photo">
-
           <img
             src="img/book-project.jpg"
             alt="Fieldwork in Gujarat, India">
 
           <p class="book-photo-caption">
-            Fieldwork in Gujarat, India. Photograph by Surili Sheth, shared with consent.
+            Fieldwork in Gujarat, India. Photograph by Surili Sheth,
+            shared with consent.
           </p>
-
         </div>
 
-
         <p>
-          My book project, <i>Making Violence Legible: Dependency, Disclosure, and Institutional Response</i>, asks when institutions can recognize violence without taking control over whether, when, and how people disclose it. Institutions do not simply receive claims: they classify, translate, redirect, and sometimes remove them from the formal record altogether. The book treats this production of legibility as a political process, asking how institutional rules and incentives shape which experiences of violence become recognizable and actionable claims.
+          My book project,
+          <i>
+            Making Violence Legible: Dependency, Disclosure, and
+            Institutional Response
+          </i>,
+          asks when institutions can recognize violence without taking control
+          over whether, when, and how people disclose it. Institutions do not
+          simply receive claims: they classify, translate, redirect, and
+          sometimes remove them from the formal record altogether. The book
+          treats this production of legibility as a political process, asking
+          how institutional rules and incentives shape which experiences of
+          violence become recognizable and actionable claims.
         </p>
 
-
         <p>
-          The book develops <i>witnessing</i> as an institutional capacity: the ability to receive testimony on claimants' terms, help them navigate formal systems, and preserve their agency over disclosure. My research on domestic violence in India shows why this capacity matters. Following claims across women's organizations, caste councils, police, courts, families, and community institutions, I show how the same experience of violence can be transformed into a marital dispute, redirected toward reconciliation, translated into a civil maintenance claim, or disappear from official records altogether. Administrative data therefore reflect not only citizen demand or institutional performance, but the processes through which institutions determine which claims count. This broadens the margin of agency beyond the decision to disclose, to the ways claimants navigate, redirect, and strategically position their claims across institutions.
+          The book develops <i>witnessing</i> as an institutional capacity:
+          the ability to receive testimony on claimants' terms, help them
+          navigate formal systems, and preserve their agency over disclosure.
+          My research on domestic violence in India shows why this capacity
+          matters. Following claims across women's organizations, caste
+          councils, police, courts, families, and community institutions, I
+          show how the same experience of violence can be transformed into a
+          marital dispute, redirected toward reconciliation, translated into a
+          civil maintenance claim, or disappear from official records
+          altogether. Administrative data therefore reflect not only citizen
+          demand or institutional performance, but the processes through which
+          institutions determine which claims count. This broadens the margin
+          of agency beyond the decision to disclose, to the ways claimants
+          navigate, redirect, and strategically position their claims across
+          institutions.
         </p>
 
-
         <p>
-          Comparative chapters examine institutions organized around marital preservation in rural India, Title IX and mandatory-reporting regimes in U.S. universities, and sponsorship and labor governance under the kafala system. Across these settings, the book asks when efforts to make violence visible instead impose new costs on claimants, and when institutions can make harm legible while preserving control over disclosure. It evaluates institutional reforms including representative reporting bureaucracies, mandatory reporting, protection orders, and gender-equity and sexual-harassment training.
+          Comparative chapters examine institutions organized around marital
+          preservation in rural India, Title IX and mandatory-reporting regimes
+          in U.S. universities, and sponsorship and labor governance under the
+          kafala system. Across these settings, the book asks when efforts to
+          make violence visible instead impose new costs on claimants, and
+          when institutions can make harm legible while preserving control
+          over disclosure. It evaluates institutional reforms including
+          representative reporting bureaucracies, mandatory reporting,
+          protection orders, and gender-equity and sexual-harassment training.
         </p>
-
       </section>
 
     </div>
-
   </body>
-
 </html>
